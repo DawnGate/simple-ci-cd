@@ -14,8 +14,9 @@ This project aim to try ci with react and github
 2. Create github ci/cd pipeline
 3. Create test
 4. Update github with ci/cd for test
-5. Integrate with sonarqube - for code qualify
+5. Integrate with sonarqube, prettier, eslint - for code qualify
 6. Seperate flow (development, deploy)
-7. Auto deploy in host (vercel)
+7. Find security with npm audit or snyk
+8. Auto deploy in host (vercel)
 
 ## Done

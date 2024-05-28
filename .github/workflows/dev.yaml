@@ -1,0 +1,42 @@
+---
+# Name of the workflow 
+name: Development deploy
+# Trigger the workflow work on push to the dev branch
+on:
+  push:
+    branches:
+      - dev
+# List of job
+# a "job" is a set of steps that are execute on the same runner
+jobs:
+  # Name of the job
+  build-and-test:
+    # Operating system to run on
+    runs-on: ubuntu-latest
+
+    # List of steps of make up the job
+    steps:
+
+      # Checkout your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Setup Node.js environment
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
+      # Install dependancies
+      - name: Install dependancies
+        run: npm install
+
+      # Build
+      - name: Build application
+        run: npm run build
+
+      # Run tests
+      # - name: Run tests
+      #  run: npm run test
+
+      # Deploy
