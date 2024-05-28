@@ -17,6 +17,6 @@ This project aim to try ci with react and github
 5. Integrate with sonarqube, prettier, eslint - for code qualify
 6. Seperate flow (development, deploy)
 7. Find security with npm audit or snyk
-8. Auto deploy in host (vercel)
+8. Auto deploy in host (firebase hosting)
 
 ## Done
