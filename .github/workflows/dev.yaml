@@ -37,6 +37,6 @@ jobs:
 
       # Run tests
       - name: Run tests
-        run: echo "Running test after build"
+        run: npm run test
 
       # Deploy
