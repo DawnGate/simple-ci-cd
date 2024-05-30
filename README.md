@@ -13,11 +13,12 @@ This project aim to try ci with react and github
 1. Create a project [X]
 2. Create github ci/cd pipeline [X]
 3. Create test [X]
-4. Update github with ci/cd for test
-5. Integrate with sonarqube, prettier, eslint - for code qualify
-6. Seperate flow (development, deploy)
-7. Find security with npm audit or snyk
-8. Auto deploy in host (firebase hosting)
+4. Update github with ci/cd for test [X]
+5. Test integrated and test e2e
+6. Integrate with sonarqube, prettier, eslint - for code qualify
+7. Seperate flow (development, deploy)
+8. Find security with npm audit or snyk
+9. Auto deploy in host (firebase hosting)
 
 ## Note
 
