@@ -1,0 +1,19 @@
+---
+name: Production deploy
+on:
+  push:
+    branches: [master]
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node_version: 16.x
+      - name: Install dependancies
+        run: npm install
+      - name: Build application
+        run: npm run build
