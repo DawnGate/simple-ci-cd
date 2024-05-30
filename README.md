@@ -17,7 +17,7 @@ This project aim to try ci with react and github
 5. Test integrated and test e2e [X]
 6. Integrate with sonarqube - for code qualify [! Don't have server sonarqube]
 7. Seperate flow (development, master) [X]
-8. Find security with npm audit or snyk
+8. Find security with npm audit or snyk [! Don't have account - pending]
 9. Auto deploy in host (firebase hosting)
 
 ## Note
