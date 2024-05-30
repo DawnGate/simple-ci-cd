@@ -27,6 +27,14 @@ jobs:
         with:
           node-version: 16.x
 
+      # Test with cypress 
+      - name: Cypress run
+        uses: cypress-io/github-actions@v6
+        with:
+          build: npm run build
+          start: npm run dev
+          browser: chrome
+
       # Install dependancies
       - name: Install dependancies
         run: npm install
@@ -38,5 +46,3 @@ jobs:
       # Run tests
       - name: Run tests
         run: npm run test
-
-      # Deploy
